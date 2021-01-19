@@ -4,6 +4,7 @@
    box-sizing: border-box;
 }
 
+
 /* Custom properties */
 
 :root {
@@ -23,6 +24,7 @@
    --fs-body: 1rem;
 }
 
+/* Make stuff larger on larger screens, 800px is usually a good value */
 @media (min-width: 800px) {
    :root {
       --fs-h1: 4.5rem;
@@ -31,4 +33,34 @@
       --fs-body: 1.125rem;
    }
 }
+
+
+/* General Styles */
+
+body {
+   background: var(--clr-light);
+   color: var(--clr-dark);
+   margin: 0;
+   font-family: var(--ff-primary);
+   font-size: var(--fs-body);
+   line-height: 1.6;
+}
+
+img {
+   display: block;  /* To avoid some issues with images */
+   max-width: 100%;  /* To avoid overflowing on the sides of the page */
+}
+
+
+/* Typography */
+h1,
+h2,
+h3 {
+   line-height: 1.1;
+   margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
 
