@@ -179,7 +179,7 @@ nav {
    background-color: var(--clr-dark);  /* In case the image fails to load */
    background-image: url(../img/services-bg.jpg);
    background-size: cover;  /* To avoid it from repeating itself */
-   background-blend-mode: darken;  /* Blends the background image with the background solid colour */
+   background-blend-mode: multiply;  /* Blends the background image with the background solid colour */
    color: var(--clr-light);
 }
 
