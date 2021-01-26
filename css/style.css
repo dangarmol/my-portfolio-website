@@ -479,6 +479,16 @@ header {
 
 /* Individual portfolio item styles */
 
+/* This makes a shadow that fits transparent images, such as .png files */
+.portfolio-item-icon {
+   -webkit-filter: drop-shadow(5px 5px 5px #222);
+   filter: drop-shadow(5px 5px 5px #222);
+   grid-area: img;
+   min-width: 250px;
+   position: relative;
+   z-index: 2;
+}
+
 .portfolio-item-individual {
    padding: 0 2em 2em;
    max-width: 1000px;
